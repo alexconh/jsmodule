@@ -12,6 +12,6 @@ switch (WEATHER){
     case 'd':
         console.log('Catching clouds')
     default:
-        const ALTERNATIVE = prompt('Descríbe tu día')
-        console.log(`${ALTERNATIVE}`)
+        const WEATHER_DESCRIPTION = prompt('Descríbe tu día')
+        console.log(`${WEATHER_DESCRIPTION}`)
 }

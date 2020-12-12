@@ -6,4 +6,8 @@ function tablas_de_multiplicar(string_name) {
     }
 }
 
-tablas_de_multiplicar('987')
+function is_palindrome(string_to_compare){
+    
+}
+
+// tablas_de_multiplicar('987')

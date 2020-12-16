@@ -12,7 +12,7 @@ console.log ('Dobles')
 const arrayDoubles = [1, 2, 3]
 let doubles = []
 arrayDoubles.forEach(currentDouble => {
-    doubles = doubles.concat(currentDouble*2)
+    doubles.push(currentDouble*2)
     return doubles
 })
 console.log (doubles)
@@ -22,8 +22,9 @@ const arrayPairs = [1, 2, 3, 4]
 let pairs = []
 arrayPairs.forEach(currentNumber =>{
     if(currentNumber%2 == 0){
-        pairs = pairs.concat(currentNumber)
+        pairs.push(currentNumber)
     }
+    return pairs
 })
 console.log(pairs)
 
@@ -31,6 +32,7 @@ console.log('letras')
 const arrayStrings = ['hola', 'mundo']
 let result = []
 arrayStrings.forEach(currentWord =>{
-    result = result.concat(currentWord[0] + currentWord[currentWord.length-1])
+    result.push(currentWord[0] + currentWord[currentWord.length-1])
+    return result
 })
 console.log(result)

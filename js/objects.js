@@ -38,9 +38,19 @@ let persons = [
 ]
 
 let votants = persons.reduce ((acc, person) => 
-person.voted === true ? acc +1 : acc, 0)
+    person.voted === true ? acc +1 : acc, 0)
 
 let ageVotants = persons.reduce((acc, person) => 
-person.voted === true ? acc + person.age : acc, 0)/votants
+    person.voted === true ? acc + person.age : acc, 0)/votants
 
 console.log(`Hubo ${votants} votantes y el promedio de edad es ${ageVotants}`)
+
+let numbersReduce = [
+    [1, 2, 4],
+    [1, 2, 8],
+    [1, 9, 3]
+]
+let total = numbersReduce.reduce((acc, arrNumber)=>
+    acc + arrNumber.reduce((total, number)=> total + number, 0), 0)
+
+console.log (total)
